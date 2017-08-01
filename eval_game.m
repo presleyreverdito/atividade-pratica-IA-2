@@ -7,7 +7,7 @@
 % author: raonifst at gmail dot com
 
 
-function [ score ] = eval_game_a( Board, depth,  player)
+function [ score ] = eval_game( Board, depth,  player)
         score=0;
 
        if (find_streak(Board, 1,4)>0)
