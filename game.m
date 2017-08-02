@@ -23,9 +23,9 @@ while over == 0,
     if player == computer,
 
         fprintf('Computer\n');
-
-       [ ~, best_pos ] = minimax(Board, depth, player, -Inf, Inf);
-
+        tic
+       [ ~, best_pos ] = minimax_alpha_beta(Board, depth, player, -Inf, Inf);
+       toc
         [Board, ~ ] = do_move(Board, best_pos, player);
 
     else
